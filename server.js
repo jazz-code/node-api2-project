@@ -8,6 +8,11 @@ const server = express();
 server.use(express.json());
 // server.use(helmet());
 
+//  Routes
+const postsRouter = require("./api/posts/posts.router")
+
+server.use("/api/posts", postsRouter);
+
 server.get("/", (req, res) => {
     res.status(200).json(`Welcome to the Jungle`);
   });
