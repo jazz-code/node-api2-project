@@ -2,7 +2,7 @@ const express = require("express");
 // const helmet = require("helmet");
 // const cors = require("cors");
 // const secrets = require("../config/secrets.js");
-const request = require('request')
+// const request = require('request')
 const server = express();
 
 server.use(express.json());
